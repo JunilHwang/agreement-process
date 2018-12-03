@@ -4,8 +4,8 @@
   .logo{
     img{height:70px;}
   }
-  .gnb{font-size:17px;display:flex;align-items:center;
-    a{color:#aaa;padding:0 30px;display:block;text-decoration:none;transition:0.3s;
+  .gnb{font-size:15px;display:flex;align-items:center;
+    a{color:#aaa;padding:0 20px;display:block;text-decoration:none;transition:0.3s;
       &:hover,
       &.router-link-active{color:#000;}
     }
@@ -38,5 +38,16 @@ span.middle{display:inline-block;vertical-align:middle;height:100%;width:0;
   .description{width:50%;line-height:160%;}
   .info{width:400px;
     li+li{margin-top:20px;}
+  }
+}
+
+/* release */
+.release{
+  article{background:#fff;padding:20px;border-radius:10px;
+    +article{margin-top:40px;}
+    h4{font-size:17px;font-weight:normal;padding-bottom:10px;color:#666;}
+    dl{border-top:1px solid #ddd;border-bottom:1px solid #ddd;padding:10px 0;}
+    dt{font-size:21px;padding-bottom:10px;}
+    dd{padding-left:20px;line-height:200%;}
   }
 }
